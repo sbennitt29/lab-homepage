@@ -8,18 +8,46 @@ h2 {
   text-decoration: underline;
 }
 
+nav {
+  background-color:rgb(83, 162, 99);
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 30px;
+}
+
+nav a:hover {
+  background-color: lightgreen;
+  color: black;
+  text-decoration: none;
+}
+
 .highlights {
   font-size: 18px;
   font-style: italic;
+  text-align: center;
 }
 
 #main-title {
   text-transform: uppercase;
+  color:white;
+  background-color: darkblue;
+  margin: 0;
+  padding: 20px;
+}
+
+a {
+  color: darkred;
+  text-decoration: none;
 }
 
 a:hover {
-font-weight: bold;
-  background-color: lightgray;
+  color: rgb(88, 4, 14);
+  text-decoration: underline;
 }
 
 @media (max-width: 600px) {
@@ -30,13 +58,40 @@ font-weight: bold;
 }
 
 .description {
-  font-size: 18px;
   line-height: 1.5;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+#list li {
+  list-style-type: square;
+  font-size: 20px;
+  margin-left: 30%;
+}
+
+#list2 li {
+  list-style-type: square;
+  font-size: 18px;
+  margin-left: 30%;
+  margin-bottom: 5px;
+  padding: 5px;
 }
 
 li::marker {
   font-size: 20px;
   font-weight: bold;
+}
+
+ol {
+  width: 80%;
+  margin: 0 auto;
 }
 
 #subtitle {
@@ -46,7 +101,54 @@ li::marker {
   font-size: 22px;
 }
 
-li {
-  margin-bottom: 30px;
+.profile-photo {
+  margin-top: 20px;
+  border: 3px solid black;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(178, 217, 230);
+}
+
+.text-box {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(234, 216, 216);
   padding: 15px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+table {
+  margin: 30px auto;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+th, td {
+  border: 2px solid black;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: darkred;
+  color: white;
+}
+
+.game {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.soccer-word {
+  color: darkblue;
+  font-weight: bold;
 }
